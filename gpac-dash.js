@@ -39,7 +39,7 @@ var sendMediaSegmentsFragmented = false;
 var SEGMENT_MARKER = "eods";
 var no_marker_write = false;
 var sendInitSegmentsFragmented = false;
-var allowCors = false;
+var allowCors = true;
 
 var use_watchFile = true;
 var watchOptions = { persistent: true, recursive: false };

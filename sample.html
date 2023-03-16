@@ -1,0 +1,54 @@
+<!-- <!doctype html>
+<html>
+
+<head>
+    <title>Dash.js Rocks</title>
+    <style>
+        video {
+            width: 640px;
+            height: 360px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <video id="videoPlayer" autoplay preload="none" controls="true"></video> -->
+        <!-- <video controls>
+            <source src="http://localhost:8000/outputVideos/dash_tiled.mpd" type="application/dash+xml" />
+        </video> -->
+    <!-- </div>
+    <script src="http://cdn.dashjs.org/latest/dash.all.min.js" type="application/javascript"></script>
+    <script>
+        (function () {
+            var url = "http://localhost:8000/outputVideos/dash_tiled.mpd";
+            // var url = "http://localhost:8000/sampleVideos/sample1440p.mp4"
+            var player = dashjs.MediaPlayer().create();
+            player.initialize(document.querySelector("#videoPlayer"), url, true);
+        })();
+    </script>
+</body>
+
+</html> -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Video Player</title>
+    <script src="https://cdn.dashjs.org/latest/dash.all.min.js"></script>
+    <style>
+        video {
+            width: 640px;
+            height: 360px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <video data-dashjs-player autoplay src="http://localhost:8000/outputVideos/dash_tiled.mpd"></video>
+    </div>
+</body>
+
+</html>
